@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/music4"
+    android:scrollbarThumbHorizontal="@color/cardview_shadow_end_color"
+    android:scrollbarThumbVertical="@android:drawable/divider_horizontal_textfield"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/play"
+        android:layout_width="176dp"
+        android:layout_height="179dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="119dp"
+        android:onClick="play"
+        android:text="Play"
+        android:textSize="25dp"
+        app:backgroundTint="#E1709C"
+        app:cornerRadius="50dp"
+        app:iconTint="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rippleColor="@color/cardview_shadow_end_color" />
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="173dp"
+        android:layout_height="171dp"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="157dp"
+        android:onClick="stop"
+        android:text="Stop"
+        android:textSize="25dp"
+        app:backgroundTint="#5EB7E8"
+        app:cornerRadius="50dp"
+        app:iconPadding="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pause" />
+
+    <Button
+        android:id="@+id/pause"
+        android:layout_width="170dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="40dp"
+        android:onClick="pause"
+        android:text="Pause"
+        android:textSize="25dp"
+        app:backgroundTint="#1976D2"
+        app:cornerRadius="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/play" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
